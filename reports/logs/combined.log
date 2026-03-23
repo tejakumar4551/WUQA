@@ -1,0 +1,105 @@
+2026-03-23 12:04:43.719  [INFO   ]  Global setup started  |  env="dev"  |  baseUrl="https://jsonplaceholder.typicode.com"
+2026-03-23 12:04:43.850  [INFO   ]  API health check passed  |  baseUrl="https://jsonplaceholder.typicode.com"  |  status=200
+2026-03-23 12:04:43.851  [INFO   ]  Global setup complete
+2026-03-23 12:04:54.148  [INFO   ]  --> GET /users/1  |  headers={}
+2026-03-23 12:04:54.176  [INFO   ]  --> GET /users  |  headers={}
+2026-03-23 12:04:54.273  [INFO   ]  <-- 200 GET /users
+2026-03-23 12:04:54.297  [INFO   ]  <-- 200 GET /users/1
+2026-03-23 12:04:54.577  [INFO   ]  --> GET /users/99999  |  headers={}
+2026-03-23 12:04:54.592  [WARN   ]  <-- 404 GET /users/99999
+2026-03-23 12:04:57.376  [INFO   ]  --> GET /users/99999  |  headers={}
+2026-03-23 12:04:57.405  [INFO   ]  --> GET /posts/99999  |  headers={}
+2026-03-23 12:04:57.467  [WARN   ]  <-- 404 GET /users/99999
+2026-03-23 12:04:57.497  [INFO   ]  --> GET /users/1  |  headers={}
+2026-03-23 12:04:57.514  [INFO   ]  <-- 200 GET /users/1
+2026-03-23 12:04:57.536  [INFO   ]  --> GET /posts/1  |  headers={}
+2026-03-23 12:04:57.548  [INFO   ]  <-- 200 GET /posts/1
+2026-03-23 12:04:57.573  [INFO   ]  --> POST /posts  |  headers={}  |  body={}
+2026-03-23 12:04:58.151  [WARN   ]  <-- 404 GET /posts/99999
+2026-03-23 12:04:58.182  [INFO   ]  --> POST /posts  |  headers={}  |  body={"userId":"not-a-number","title":12345}
+2026-03-23 12:04:58.318  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:04:58.818  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:05:05.653  [INFO   ]  --> GET /posts  |  headers={}
+2026-03-23 12:05:05.674  [INFO   ]  <-- 200 GET /posts
+2026-03-23 12:05:05.956  [INFO   ]  --> GET /posts/1  |  headers={}
+2026-03-23 12:05:05.971  [INFO   ]  <-- 200 GET /posts/1
+2026-03-23 12:05:06.033  [INFO   ]  --> POST /posts  |  headers={}  |  body={"title":"Accusamus nulla claustrum atavus vinco ventus.","body":"Tum deserunt vitae texo amo ambulo ceno temeritas denego. Viridis tyrannus debitis tamisium demens adulatio denique quo amita. Voveo repellendus alii adfero tenuis.","userId":1}
+2026-03-23 12:05:06.209  [INFO   ]  --> GET /posts?userId=1  |  headers={}
+2026-03-23 12:05:06.239  [INFO   ]  <-- 200 GET /posts?userId=1
+2026-03-23 12:05:06.247  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:05:06.264  [INFO   ]  --> PUT /posts/1  |  headers={}  |  body={"title":"Qui necessitatibus amo conculco super.","body":"Delego cernuus consequatur cupiditate decretum cariosus voluptate vergo sollers. Explicabo possimus consectetur nihil amor vilitas usque adinventitias. Corporis umbra utilis unus.","userId":1}
+2026-03-23 12:05:06.272  [INFO   ]  --> PATCH /posts/1  |  headers={}  |  body={"title":"Updated: 64678c4a-3380-45e9-8ce1-83a6694d0036"}
+2026-03-23 12:05:06.484  [INFO   ]  <-- 200 PATCH /posts/1
+2026-03-23 12:05:06.504  [INFO   ]  --> DELETE /posts/1  |  headers={}
+2026-03-23 12:05:06.715  [INFO   ]  <-- 200 DELETE /posts/1
+2026-03-23 12:05:06.734  [INFO   ]  --> GET /posts/99999  |  headers={}
+2026-03-23 12:05:06.900  [INFO   ]  <-- 200 PUT /posts/1
+2026-03-23 12:05:07.401  [WARN   ]  <-- 404 GET /posts/99999
+2026-03-23 12:05:17.179  [INFO   ]  --> POST /users  |  headers={}  |  body={"name":"Gregory Emmerich","email":"jack.emard70@gmail.com","username":"Kenna77","phone":"244.249.0134 x511","website":"https://oval-hat.name/"}
+2026-03-23 12:05:17.890  [INFO   ]  <-- 201 POST /users
+2026-03-23 12:05:17.924  [INFO   ]  --> POST /posts  |  headers={}  |  body={"title":"Distinctio thermae corrupti vaco crudelis cogo doloremque conturbo fuga averto.","body":"Commemoro sol alii vel animus cogo pariatur caries tenus cuppedia. Thermae demum currus assentator ager eaque adnuo. Sopor tam conitor amita avaritia antea clarus damno vitiosus.","userId":11}
+2026-03-23 12:05:18.157  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:05:18.186  [INFO   ]  --> POST /comments  |  headers={}  |  body={"postId":101,"name":"Geoffrey Welch","email":"sigrid_powlowski82@yahoo.com","body":"Sponte magni umbra. Degero strenuus taceo cibo vinculum coniuratio. Curo volo suadeo territo ultra candidus virgo."}
+2026-03-23 12:05:18.405  [INFO   ]  <-- 201 POST /comments
+2026-03-23 12:05:18.425  [INFO   ]  --> GET /comments?postId=101  |  headers={}
+2026-03-23 12:05:19.022  [INFO   ]  <-- 200 GET /comments?postId=101
+2026-03-23 12:05:28.751  [INFO   ]  --> POST /users  |  headers={}  |  body={"name":"Mercedes Koss","email":"theresia.spinka1@hotmail.com","username":"Merlin.Brekke","phone":"1-308-688-2584","website":"https://unhealthy-carnival.net/"}
+2026-03-23 12:05:29.039  [INFO   ]  <-- 201 POST /users
+2026-03-23 12:05:29.221  [INFO   ]  --> POST /posts  |  headers={}  |  body={"title":"Tutis adhuc dolore unde ocer deputo.","body":"Amplexus speciosus utpote bene volva decipio tempus bibo aggero. Caecus cupio ascisco aetas viriliter vomito voluptates tepesco. Conservo unde sponte stipes.","userId":11}
+2026-03-23 12:05:29.432  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:05:29.595  [INFO   ]  --> POST /comments  |  headers={}  |  body={"postId":101,"name":"Mr. Ramiro Barton","email":"shaniya.konopelski@gmail.com","body":"Vomica veritas deleo. Cilicium spectaculum velum dicta compono vespillo. Consectetur aurum dolore cuppedia illo ratione valeo."}
+2026-03-23 12:05:29.805  [INFO   ]  <-- 201 POST /comments
+2026-03-23 12:05:29.977  [INFO   ]  --> GET /comments?postId=101  |  headers={}
+2026-03-23 12:05:29.987  [INFO   ]  <-- 200 GET /comments?postId=101
+2026-03-23 12:05:30.192  [INFO   ]  Global teardown complete
+2026-03-23 12:07:20.113  [INFO   ]  Global setup started  |  env="dev"  |  baseUrl="https://jsonplaceholder.typicode.com"
+2026-03-23 12:07:20.190  [INFO   ]  API health check passed  |  baseUrl="https://jsonplaceholder.typicode.com"  |  status=200
+2026-03-23 12:07:20.191  [INFO   ]  Global setup complete
+2026-03-23 12:07:30.389  [INFO   ]  --> GET /users  |  headers={}
+2026-03-23 12:07:30.388  [INFO   ]  --> GET /users/1  |  headers={}
+2026-03-23 12:07:30.483  [INFO   ]  <-- 200 GET /users/1
+2026-03-23 12:07:30.523  [INFO   ]  <-- 200 GET /users
+2026-03-23 12:07:30.767  [INFO   ]  --> GET /users/99999  |  headers={}
+2026-03-23 12:07:30.778  [WARN   ]  <-- 404 GET /users/99999
+2026-03-23 12:07:33.522  [INFO   ]  --> GET /users/99999  |  headers={}
+2026-03-23 12:07:33.563  [INFO   ]  --> GET /posts/99999  |  headers={}
+2026-03-23 12:07:33.653  [WARN   ]  <-- 404 GET /posts/99999
+2026-03-23 12:07:33.687  [INFO   ]  --> GET /users/1  |  headers={}
+2026-03-23 12:07:33.705  [INFO   ]  <-- 200 GET /users/1
+2026-03-23 12:07:33.729  [INFO   ]  --> GET /posts/1  |  headers={}
+2026-03-23 12:07:33.742  [INFO   ]  <-- 200 GET /posts/1
+2026-03-23 12:07:33.766  [INFO   ]  --> POST /posts  |  headers={}  |  body={}
+2026-03-23 12:07:34.283  [WARN   ]  <-- 404 GET /users/99999
+2026-03-23 12:07:34.316  [INFO   ]  --> POST /posts  |  headers={}  |  body={"userId":"not-a-number","title":12345}
+2026-03-23 12:07:34.371  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:07:34.549  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:07:42.432  [INFO   ]  --> GET /posts  |  headers={}
+2026-03-23 12:07:42.452  [INFO   ]  <-- 200 GET /posts
+2026-03-23 12:07:42.564  [INFO   ]  --> GET /posts?userId=1  |  headers={}
+2026-03-23 12:07:42.599  [INFO   ]  <-- 200 GET /posts?userId=1
+2026-03-23 12:07:42.630  [INFO   ]  --> GET /posts/1  |  headers={}
+2026-03-23 12:07:42.664  [INFO   ]  <-- 200 GET /posts/1
+2026-03-23 12:07:42.716  [INFO   ]  --> POST /posts  |  headers={}  |  body={"title":"Suscipit pauci amaritudo stultus spero crur cornu.","body":"Argentum temeritas suadeo. Ambulo aegre ambitus nobis. Spiculum conqueror adsidue statim uredo tandem claro verto patruus tres.","userId":1}
+2026-03-23 12:07:42.926  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:07:42.942  [INFO   ]  --> PUT /posts/1  |  headers={}  |  body={"title":"Decerno beatae peccatus validus numquam corpus sed.","body":"Patria comminor talio benigne cognatus vorago terra. Ex curso tergum damno curiositas custodia acsi voro. Cometes quae usque abeo aestas curto tersus canonicus vir tabella.","userId":1}
+2026-03-23 12:07:42.962  [INFO   ]  --> PATCH /posts/1  |  headers={}  |  body={"title":"Updated: 808a6fb7-30c5-4c3e-b622-cba76f24038e"}
+2026-03-23 12:07:43.170  [INFO   ]  <-- 200 PUT /posts/1
+2026-03-23 12:07:43.177  [INFO   ]  <-- 200 PATCH /posts/1
+2026-03-23 12:07:43.211  [INFO   ]  --> DELETE /posts/1  |  headers={}
+2026-03-23 12:07:43.225  [INFO   ]  --> GET /posts/99999  |  headers={}
+2026-03-23 12:07:43.234  [WARN   ]  <-- 404 GET /posts/99999
+2026-03-23 12:07:43.446  [INFO   ]  <-- 200 DELETE /posts/1
+2026-03-23 12:07:53.141  [INFO   ]  --> POST /users  |  headers={}  |  body={"name":"Ollie Toy","email":"alejandrin_heaney@hotmail.com","username":"Stephon.Funk","phone":"582.848.9145","website":"https://avaricious-steeple.biz"}
+2026-03-23 12:07:53.418  [INFO   ]  <-- 201 POST /users
+2026-03-23 12:07:53.452  [INFO   ]  --> POST /posts  |  headers={}  |  body={"title":"Volutabrum somnus vitium cicuta.","body":"Vetus benevolentia color cornu vulgaris catena. Textilis concedo cur cognatus aegrotatio. Nemo socius vindico coma vindico cribro minus illum vereor.","userId":11}
+2026-03-23 12:07:53.668  [INFO   ]  <-- 201 POST /posts
+2026-03-23 12:07:53.691  [INFO   ]  --> POST /comments  |  headers={}  |  body={"postId":101,"name":"Tracy Ortiz","email":"beaulah_moore-nicolas62@hotmail.com","body":"Censura alioqui agnitio tamisium vitium. Qui quasi sapiente somniculosus tenax. Ambitus toties vociferor."}
+2026-03-23 12:07:53.901  [INFO   ]  <-- 201 POST /comments
+2026-03-23 12:07:53.925  [INFO   ]  --> GET /comments?postId=101  |  headers={}
+2026-03-23 12:07:53.935  [INFO   ]  <-- 200 GET /comments?postId=101
+2026-03-23 12:07:53.949  [INFO   ]  --> PATCH /posts/101  |  headers={}  |  body={"title":"Updated title - 3ed34e1b-0201-4327-a3cd-787ecacaa2b3"}
+2026-03-23 12:07:54.168  [INFO   ]  <-- 200 PATCH /posts/101
+2026-03-23 12:07:54.181  [INFO   ]  --> DELETE /posts/101  |  headers={}
+2026-03-23 12:07:54.390  [INFO   ]  <-- 200 DELETE /posts/101
+2026-03-23 12:07:54.463  [INFO   ]  Test run complete  |  total=2  |  passed=0  |  failed=0  |  skipped=2
+2026-03-23 12:07:54.465  [INFO   ]  Global teardown complete
