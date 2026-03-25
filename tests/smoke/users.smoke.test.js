@@ -6,10 +6,10 @@ const { test }           = require('../../src/utils/fixtures');
 const { timed, parseJson } = require('../../src/helpers/RequestHelper');
 const { UserSchema, UserListSchema } = require('../../src/schemas/UserSchema');
 
-test.describe('Users API - Smoke', () => {
+test.describe('Users API - Smoke @smoke', () => {
 
   // ── GET /users ────────────────────────────────────────────────
-  test('should return list of users', async ({ apiClient, assert, env }) => {
+  test('should return list of users ', async ({ apiClient, assert, env }) => {
     // timed() is a HOF — it wraps our API call and measures duration
     const [response, duration] = await timed(
       () => apiClient.get('/users')
